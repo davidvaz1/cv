@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="import" href="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Details</title>
+</head>
+
+<body>
+  <style media="screen">
+    body {
+      background-color: rgb(255, 210, 119);
+    }
+    h1, h2, h3, h4, h5, h6, p, label, input {
+      font-family:monospace, sans-serif;
+    }
+  </style>
+  <h1>Contact Me...</h1>
+  <h3>Call me through this number: 0000000000</h3>
+  <h3>My Address: 9, C-Wing, Deciduous Woods, Turnabout Alley, Manhole 437, Lane 8, Dalmations' Corner, SP 1, A.C.-900787229345</h3>
+  <h3>
+    <ul>
+      <li>my.email@gmail.com</li>
+      <li>myemail@outlook.com</li>
+      <li>MyEmail@pythonpro.com</li>
+    </ul>
+    <h4>Send your message...</h4>
+    <form action="mailto:pythondavidtest@gmail.com" method="post" enctype="text/plain">
+      <input type="date", name="date"><br><br>
+      <label>Your phone number </label><input type="text" name="phoneNumber" placeholder="Type your phone number" maxlength="10"><br><br>
+      <label>Your full name: </label><input placeholder="Type in your full name here..." name="name"><br><br>
+      <label>Your email: </label> <input type="email" name="email" placeholder="Type your email"><br><br>
+      <table>
+        <tr>
+          <td><label>Your message:&nbsp;</label></td>
+          <td><textarea placeholder="Type your message here..." rows="20" cols="80" name="message"></textarea></td>
+        </tr>
+          </table>
+        </tr><br><br>
+      <input onclick="trigger_submit()" type="submit" value="Submit your message...">
+    </form>
+
+  </h3>
+  <script>
+    function trigger_submit() {
+      window.alert("Are you sure you want to submit your message?")
+    }
+  </script>
+</body>
+
+</html>
